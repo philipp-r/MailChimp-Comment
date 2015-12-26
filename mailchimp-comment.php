@@ -5,7 +5,7 @@ Plugin URI: https://github.com/philipp-r/MailChimp-Comment
 Description: Adds a checkbox to a WordPress comment form so people can subscribe to your MailChimp list.
 Author: Philipp Rackevei
 Author URI: https://github.com/philipp-r/
-Version: 2.0
+Version: 2.1
 License: GNU General Public License v3.0
 License URI: http://www.opensource.org/licenses/gpl-license.php
 */
