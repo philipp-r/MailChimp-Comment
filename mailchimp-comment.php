@@ -152,3 +152,28 @@ function mcc_options_check_text_callback() {
 }
 
 
+
+/**
+ * Adds warning to admin panel if the settings  mcc_options_(apikey, username, server, list_id) 
+ * are not filled out completely
+ *
+ */
+// Check if all required options mcc_options_(apikey, username, server, list_id) are set
+if( empty(get_option('mcc_options_apikey')) || empty(get_option('mcc_options_username')) || empty(get_option('mcc_options_server')) || empty(get_option('mcc_options_list_id')) ) {
+	function showMessage($message, $errormsg = false) {
+		if ($errormsg) {
+			echo '<div id="message" class="error">';
+		} else {
+			echo '<div id="message" class="updated fade">';
+		}
+		echo "<p><strong>$message</strong></p></div>";
+	}
+	
+	function showAdminMessages() {
+    		showMessage('The <a href="https://github.com/philipp-r/MailChimp-Comment/wiki/Settings" target="_blank">settings for the Mailchimp Comment Plugin</a> are not filled out. The Plugin won\'t work! You can find the at Settings &gt; Discussion.', true);
+	}
+	
+	add_action('admin_notices', 'showAdminMessages');
+		
+} 
+
