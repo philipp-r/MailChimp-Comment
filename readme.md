@@ -4,6 +4,9 @@ WordPress Plugin
 
 Version 2.1
 
+You can support by donating Bitcoins to 1Gm17aVTdMvZoCXnqzd3CTiXzRguKpJDPi 	
+
+
 ## Plugin Description
 
 Adds a checkbox to a WordPress comment form so people can subscribe to your MailChimp list.
